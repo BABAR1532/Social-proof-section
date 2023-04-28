@@ -1,0 +1,232 @@
+  /* makes sizing simpler */
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* remove default spacing */
+  /* force styling of type through styling, rather than elements */
+
+  * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+
+  }
+
+  /* dark mode user-agent-styles */
+
+  html {
+    color-scheme: dark light;
+  }
+
+  /* min body height */
+
+  body {
+    min-height: 100vh;
+  }
+
+  /* responsive images/videos */
+  img,
+  picture,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* My code from here */
+
+  :root {
+
+    --document-font-style: League Spartan, sans-serif;
+    --paragraph-font-size: 15px;
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --soft-pink: hsl(333, 80%, 67%);
+  }
+
+  body {
+
+    background-image:
+      url(images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 0 left 0, bottom 0 right 0;
+    font-family: var(--document-font-style);
+    padding: 3em 1.3em;
+    
+  }
+
+  .main-section {
+    display: grid;
+    grid-template-areas:
+      'one'
+      'two'
+      'three'
+      'four';
+  }
+
+  .flex-div {
+    grid-area: one;
+  }
+
+  .main-section__review-1 {
+    grid-area: two;
+    
+  }
+
+  .main-section__review-2 {
+    grid-area: three;
+    
+  }
+
+  .main-section__review-3 {
+    grid-area: four;
+  }
+
+  .product-info__heading {
+
+    font-size: 1.8em;
+    font-weight: 600;
+    color: var(--Very-Dark-Magenta);
+    padding-bottom: 0.5em;
+  }
+
+  .product-info__about {
+
+    line-height: 1.2em;
+    font-size: var(--paragraph-font-size);
+    color: var(--dark-grayish-magenta);
+    padding-bottom: 2em;
+
+  }
+
+  svg {
+    display: inline-block;
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    background-color: var(--Light-Grayish-Magenta);
+    margin-bottom: 2em;
+    border-radius: 7px;
+    gap: 0.5em;
+  }
+
+
+  .rating p {
+    font-size: var(--paragraph-font-size);
+    font-weight: 600;
+    color: var(--Very-Dark-Magenta);
+  }
+
+  .main-section__review {
+    height: 210px;
+    background-color: var(--Very-Dark-Magenta);
+    margin-top: 1em;
+    border-radius: 7px;
+    padding: 1.6em 1em 1em 1em;
+    color: white;
+  }
+
+  .review__client-image {
+    border-radius: 50%;
+    width: 2.3em;
+    display: inline-block;
+    margin-bottom: -0.1em;
+  }
+
+  .review-info__client {
+    display: inline-block;
+    padding-left: 0.599em;
+    padding-bottom: 1.2em;
+  }
+
+  .client__name {
+    padding-bottom: 0.2999em;
+    font-weight: 500;
+  }
+
+  .client__status {
+    color: var(--soft-pink);
+  }
+
+  .review__client-words {
+    line-height: 1.2;
+    font-size: var(--paragraph-font-size);
+  }
+
+  /* For responsivness */
+
+  @media(width >= 701px) {
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 1300px;
+      background-image:
+        url(images/bg-pattern-top-desktop.svg),
+        url(images/bg-pattern-bottom-desktop.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: top 0 left 0, bottom 0 right 0;
+    }
+
+    .main-section {
+      grid-template-areas:
+      'one one one'
+      'two three four';
+      width: 75%;
+      min-width:1130px;
+      gap: 1.5em;
+    }
+
+    .flex-div{
+      display: flex;
+    }
+
+    .main-section__product-info{
+        width: 40%;
+       font-size: 1.5em;
+    }
+
+    .main-section__review{
+       max-width: 350px;
+    }
+
+    .main-section__review-2 {
+      transform: translateY(1em);
+    }
+
+    .main-section__review-3 {
+      transform: translateY(2em);
+    }
+
+    .rating {
+      height: 3.2em;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 25em;
+      margin: 0 0 1em 12em;
+    }
+
+    .rating-info__child-2{
+       transform: translateX(2em);
+    }
+
+    .rating-info__child-3{
+       transform: translateX(4em);
+   }
+  }
+
+ /* The end */
+  
