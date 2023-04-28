@@ -1,6 +1,6 @@
 
 # Frontend Mentor - Social proof section solution
-[Live site URL here](https://link-url-here.org)
+[Live site URL here](https://babar1532.github.io/Social-proof-section/)
 
 This is a solution to the [Frontend Mentor - Social proof section solution on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -24,14 +24,14 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 ### Screenshot
 
-![Desktop Design](./screenshot/desktop-design.png)
-![Mobile Design](./screenshot/mobile-design.png)
+![Desktop Design](./Screenshot/desktop.png)
+![Mobile Design](./Screenshot/mobile.png)
 
  
 ### Links
 
-- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/nft-preview-card-component-using-flexbox-and-bem-method-qVh5_cdoPg)
-- Live Site URL: [Live site URL here](https://lere22.github.io/nft-preview-card-component/)
+- Solution URL: [Solution URL here](https://github.com/BABAR1532/Social-proof-section)
+- Live Site URL: [Live site URL here](https://babar1532.github.io/Social-proof-section/)
 
 
 ## My process
